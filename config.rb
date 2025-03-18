@@ -13,9 +13,6 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
-activate :asset_hash # Optional: Cache-busting
-set :favicon_path, "/source/images/favicon.png" # Adjust path if needed
-
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
