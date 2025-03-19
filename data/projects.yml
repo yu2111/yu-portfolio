@@ -14,13 +14,13 @@
   github: https://github.com/yu2111/rails-watch-list
   online: true
 
-- name: Airbnb
+- name: SoraVé
   role: Full-stack Developer
-  description: Decent description of the app
-  image: projects/placeholder.png
+  description: SoraVé is a luxury rental platform for elite travel, offering private jets, yachts, and high-end cars. Browse, book, and experience world-class transportation with a seamless Airbnb-style system. Whether it's a private jet for your next trip, a yacht for a weekend escape, or a luxury car for a special occasion, SoraVé connects you to the finest rides worldwide. ✈️🛥️🚗
+  image: projects/soravee.png
   url: https://www.google.com
-  github: https://www.github.com
-  online: true
+  github: https://github.com/patrick498/sora-ve
+  online: false
 
 - name: Final project
   role: Full-stack Developer
