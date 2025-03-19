@@ -6,7 +6,7 @@
 
 .card-product {
   overflow: hidden;
-  height: 500px;
+  height: 545px;
   background: white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -18,13 +18,22 @@
 .card-product img {
   height: 300px;
   width: 100%;
-  object-fit: cover;
+  object-fit: scale-down;
+  transition: transform 0.3s ease-in-out;
+  &:hover{
+    transform: scale(1.1);
+  }
 }
 
 .card-product h2 {
   font-size: 16px;
   font-weight: bold;
   margin: 0;
+}
+
+.card-product h3 {
+  font-size: 14px;
+  margin-top: 8px;
 }
 
 .card-product p {
@@ -38,6 +47,7 @@
 .card-product .card-product-infos {
   padding: 16px;
   position: relative;
+  box-shadow: rgb(250, 254, 255) 0px 0px 4rem 4rem;
   &:hover {
     .external-link {
       opacity: 1;
@@ -47,7 +57,7 @@
 
 .card-links {
   position: absolute;
-  top: 160px;
+  top: 16px;
   right: 16px;
 }
 

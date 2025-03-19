@@ -1,11 +1,13 @@
-- name: Longest Word Game
-  description: Decent description of the app
-  image: projects/placeholder.png
-  url: https://www.google.com
-  github: https://www.github.com
+- name: Sora Flight
+  role: Full-stack Developer
+  description: Sora Flight is an immersive AR game where players guess actual flight details—departure, arrival, and airline—using airport distances and compass clues. Watch planes take off and land around you, challenge yourself, and unlock achievements. Whether you're a travel enthusiast or trivia fan, experience the thrill of aviation at your fingertips!
+  image: projects/sora.png
+  url: https://www.sora-flight.games/
+  github: https://github.com/andreyuki/sora_flight
   online: true
 
 - name: Movie Watchlist
+  role: Full-stack Developer
   description: Decent description of the app
   image: projects/placeholder.png
   url: https://www.google.com
@@ -13,6 +15,7 @@
   online: true
 
 - name: Airbnb
+  role: Full-stack Developer
   description: Decent description of the app
   image: projects/placeholder.png
   url: https://www.google.com
@@ -20,6 +23,7 @@
   online: true
 
 - name: Final project
+  role: Full-stack Developer
   description: Decent description of the app
   image: projects/placeholder.png
   url: https://www.google.com
@@ -27,6 +31,7 @@
   online: true
 
 - name: Yelp
+  role: Full-stack Developer
   description: Decent description of the app
   image: projects/placeholder.png
   url: https://www.google.com
