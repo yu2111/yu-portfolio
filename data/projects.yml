@@ -6,12 +6,12 @@
   github: https://github.com/andreyuki/sora_flight
   online: true
 
-- name: Movie Watchlist
+- name: Yu's Watchlist
   role: Full-stack Developer
-  description: Decent description of the app
-  image: projects/placeholder.png
-  url: https://www.google.com
-  github: https://www.github.com
+  description: Yu's Watchlist is a versatile app that helps you create and manage custom watchlists for all your favorite movies. Easily add films, organize them into different lists, and keep track of what you plan to watch next. Whether you're building a must-watch list, saving recommendations, or planning a movie marathon, Yu's Watchlist keeps everything in one convenient place! 🎬📽️
+  image: projects/watchlist.png
+  url: https://yu-watch-list-01dafcf2d2bf.herokuapp.com/
+  github: https://github.com/yu2111/rails-watch-list
   online: true
 
 - name: Airbnb
