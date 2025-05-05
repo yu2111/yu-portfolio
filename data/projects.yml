@@ -6,14 +6,6 @@
   github: https://github.com/andreyuki/sora_flight
   online: true
 
-- name: Yu's Watchlist
-  role: Full-stack Developer
-  description: Yu's Watchlist is a versatile app that helps you create and manage custom watchlists for all your favorite movies. Easily add films, organize them into different lists, and keep track of what you plan to watch next. Whether you're building a must-watch list, saving recommendations, or planning a movie marathon, Yu's Watchlist keeps everything in one convenient place! 🎬📽️
-  image: projects/watchlist.png
-  url: https://yu-watch-list-01dafcf2d2bf.herokuapp.com/
-  github: https://github.com/yu2111/rails-watch-list
-  online: true
-
 - name: SoraVé
   role: Full-stack Developer
   description: SoraVé is a luxury rental platform for elite travel, offering private jets, yachts, and high-end cars. Browse, book, and experience world-class transportation with a seamless Airbnb-style system. Whether it's a private jet for your next trip, a yacht for a weekend escape, or a luxury car for a special occasion, SoraVé connects you to the finest rides worldwide. ✈️🛥️🚗
@@ -22,18 +14,19 @@
   github: https://github.com/patrick498/sora-ve
   online: false
 
-- name: Final project
+- name: Yu's Watchlist
   role: Full-stack Developer
-  description: Decent description of the app
-  image: projects/placeholder.png
-  url: https://www.google.com
-  github: https://www.github.com
+  description: Yu's Watchlist is a versatile app that helps you create and manage custom watchlists for all your favorite movies. Easily add films, organize them into different lists, and keep track of what you plan to watch next. Whether you're building a must-watch list, saving recommendations, or planning a movie marathon, Yu's Watchlist keeps everything in one convenient place! 🎬📽️
+  image: projects/watchlist.png
+  url: https://yu-watch-list-01dafcf2d2bf.herokuapp.com/
+  github: https://github.com/yu2111/rails-watch-list
   online: true
 
-- name: Yelp
+
+- name: Yulp
   role: Full-stack Developer
-  description: Decent description of the app
-  image: projects/placeholder.png
+  description: Yulp is a restaurant discovery and review platform that helps you find the best dining spots near you. Browse menus, read real reviews, and rate your dining experiences—all in one seamless app. Whether you're craving a quick bite or a fine dining experience, Yulp connects you to the perfect restaurant. 🍽️⭐
+  image: projects/yelp.png
   url: https://www.google.com
-  github: https://www.github.com
+  github: https://github.com/yu2111/rails-yelp-mvp
   online: false
