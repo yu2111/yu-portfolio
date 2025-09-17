@@ -1,6 +1,45 @@
 <div class="row my-5">
   <div class="col-12">
     <div id="contact">
+      <div class="container w-50 py-5">
+        <h2 class="mb-4 text-center">Contact Me</h2>
+        <form name="contact" method="POST" data-netlify="true" class="needs-validation" novalidate>
+          <!-- Hidden field for Netlify -->
+          <input type="hidden" name="form-name" value="contact">
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+            <div class="invalid-feedback">Please enter your name.</div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+            <div class="invalid-feedback">Please enter a valid email.</div>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            <div class="invalid-feedback">Please enter your message.</div>
+          </div>
+          <button type="submit" class="btn btn-secondary w-100">Send</button>
+        </form>
+      </div>
+      <script>
+        // Bootstrap validation script
+        (() => {
+          'use strict'
+          const forms = document.querySelectorAll('.needs-validation')
+          Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+              form.classList.add('was-validated')
+            }, false)
+          })
+        })()
+      </script>
       <div class="d-flex justify-content-center flex-wrap">
         <div class="button-social d-flex flex-column justify-content-center align-items-center">
           <i class="fa-solid fa-envelope"></i>
