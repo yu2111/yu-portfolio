@@ -3,55 +3,85 @@
     <div id="contact">
       <div class="container w-50 py-5">
         <h2 class="mb-4 text-center">Contact Me</h2>
-        <form name="contact" method="POST" data-netlify="true" class="needs-validation" novalidate action="/source/thankyou.html.erb">
-          <input type="hidden" name="form-name" value="contact">
+        <form name="contact" method="POST" data-netlify="true" class="needs-validation" novalidate id="contact-form">
           <div class="mb-3">
-            <label for="name" class="form-label">Your Name</label>
-            <input type="text" class="form-control" id="name" name="name" required>
+            <label for="name" class="form-label">Name</label>
+            <input type="text" name="name" id="name" class="form-control" required>
             <div class="invalid-feedback">Please enter your name.</div>
           </div>
           <div class="mb-3">
-            <label for="email" class="form-label">Your Email</label>
-            <input type="email" class="form-control" id="email" name="email" required>
+            <label for="email" class="form-label">Email</label>
+            <input type="email" name="email" id="email" class="form-control" required>
             <div class="invalid-feedback">Please enter a valid email.</div>
           </div>
           <div class="mb-3">
             <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-            <div class="invalid-feedback">Please enter your message.</div>
+            <textarea name="message" id="message" class="form-control" rows="4" required></textarea>
+            <div class="invalid-feedback">Please enter a message.</div>
           </div>
-          <button type="submit" class="btn btn-secondary w-100">Send</button>
+          <button type="submit" class="btn btn-secondary w-100 mb-5">Send</button>
         </form>
-      </div>
-      <script>
-        (() => {
-          'use strict'
-          const forms = document.querySelectorAll('.needs-validation')
-          Array.from(forms).forEach(form => {
-            form.addEventListener('submit', event => {
-              if (!form.checkValidity()) {
-                event.preventDefault()
-                event.stopPropagation()
+        <div id="form-success" class="alert alert-success mt-3 d-none">
+          ✅ Thanks for your message! I’ll get back to you soon.
+        </div>
+        <div id="form-error" class="alert alert-danger mt-3 d-none">
+          ❌ Oops! Something went wrong. Please try again.
+        </div>
+        <script>
+          const form = document.getElementById("contact-form");
+          const successMsg = document.getElementById("form-success");
+          const errorMsg = document.getElementById("form-error");
+
+          function showMessage(element) {
+            element.classList.remove("d-none");
+
+            setTimeout(() => {
+              element.classList.add("d-none");
+            }, 3000);
+          }
+
+          form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            if (!form.checkValidity()) {
+              form.classList.add("was-validated");
+              return;
+            }
+
+            const formData = new FormData(form);
+
+            fetch("/", {
+              method: "POST",
+              body: formData,
+            })
+            .then(response => {
+              if (response.ok) {
+                form.reset();
+                form.classList.remove("was-validated");
+                showMessage(successMsg);
+              } else {
+                throw new Error("Network response was not ok");
               }
-              form.classList.add('was-validated')
-            }, false)
-          })
-        })()
-      </script>
-      <div class="d-flex justify-content-center flex-wrap">
-        <div class="button-social d-flex flex-column justify-content-center align-items-center">
-          <i class="fa-solid fa-envelope"></i>
-          <%= mail_to "my_name@example.com", "", class: 'button-social-link' %>
-        </div>
-        <div class="button-social d-flex flex-column justify-content-center align-items-center">
-          <i class="fa-brands fa-github"></i>
-          <%= link_to "", "https://github.com/", target: '_blank', class: 'button-social-link' %>
-        </div>
-        <div class="button-social d-flex flex-column justify-content-center align-items-center">
-          <i class="fa-brands fa-linkedin"></i>
-          <%= link_to "", "https://www.linkedin.com", target: '_blank', class: 'button-social-link' %>
+            })
+            .catch(() => {
+              showMessage(errorMsg);
+            });
+          });
+        </script>
+        <div class="d-flex justify-content-center flex-wrap">
+          <div class="button-social d-flex flex-column justify-content-center align-items-center">
+            <i class="fa-solid fa-envelope"></i>
+            <%= mail_to "my_name@example.com", "", class: 'button-social-link' %>
+          </div>
+          <div class="button-social d-flex flex-column justify-content-center align-items-center">
+            <i class="fa-brands fa-github"></i>
+            <%= link_to "", "https://github.com/", target: '_blank', class: 'button-social-link' %>
+          </div>
+          <div class="button-social d-flex flex-column justify-content-center align-items-center">
+            <i class="fa-brands fa-linkedin"></i>
+            <%= link_to "", "https://www.linkedin.com", target: '_blank', class: 'button-social-link' %>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
