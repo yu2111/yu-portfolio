@@ -37,7 +37,7 @@
 }
 
 .card-product p {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.4;
   opacity: .7;
   margin-bottom: 0;
@@ -99,7 +99,7 @@
     grid-template-columns: 1fr 1fr;
   }
   .external-link {
-    opacity: 0;
+    opacity: 1;
   }
 }
 
@@ -108,11 +108,19 @@
   .cards {
     grid-template-columns: 1fr 1fr;
   }
+
+   .external-link {
+    opacity: 1;
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+   .external-link {
+    opacity: 1;
   }
 }

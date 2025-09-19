@@ -1,6 +1,6 @@
-- name: 30-Day Hard (on progress)
+- name: 30-Day Hard (in progress)
   role: Full-stack Developer
-  description: 30-day hard tracker, an app that helps you build discipline
+  description: Currently developing 30-Day Hard Tracker, an app to help users build discipline through 30-day challenges. In progress: core features for progress tracking, streaks, and goal-setting to encourage consistency and personal growth.
   image: projects/30day.png
   url: https://www.google.com
   github: https://github.com/yu2111/30-Day-Hard_app
@@ -8,7 +8,7 @@
 
 - name: Sora Flight
   role: Full-stack Developer
-  description: Sora Flight is an immersive AR game where players guess actual flight details—departure, arrival, and airline—using airport distances and compass clues. Watch planes take off and land around you, challenge yourself, and unlock achievements. Whether you're a travel enthusiast or trivia fan, experience the thrill of aviation at your fingertips!
+  description: Developed core features for Sora Flight, an AR game where players guess real flight details using airport distances and compass clues. Designed and implemented the dashboard, scoring system, badges, and achievement tracking, significantly improving gameplay and user engagement.
   image: projects/sora.png
   url: https://www.sora-flight.games/
   github: https://github.com/andreyuki/sora_flight
@@ -16,7 +16,7 @@
 
 - name: SoraVé
   role: Full-stack Developer
-  description: SoraVé is a luxury rental platform for elite travel, offering private jets, yachts, and high-end cars. Browse, book, and experience world-class transportation with a seamless Airbnb-style system. Whether it's a private jet for your next trip, a yacht for a weekend escape, or a luxury car for a special occasion, SoraVé connects you to the finest rides worldwide. ✈️🛥️🚗
+  description: Contributed to SoraVé, a luxury rental platform for elite travel offering private jets, yachts, and high-end cars. Developed the dashboard enabling users to track bookings seamlessly as both customers and renters, improving transparency and user experience.
   image: projects/soravee.png
   url: https://www.google.com
   github: https://github.com/patrick498/sora-ve
@@ -24,7 +24,7 @@
 
 - name: Yu's Watchlist
   role: Full-stack Developer
-  description: Yu's Watchlist is a versatile app that helps you create and manage custom watchlists for all your favorite movies. Easily add films, organize them into different lists, and keep track of what you plan to watch next. Whether you're building a must-watch list, saving recommendations, or planning a movie marathon, Yu's Watchlist keeps everything in one convenient place! 🎬📽️
+  description: Built Yu's Watchlist, a personal project for creating and managing custom movie watchlists. Users can add films, organize them into lists, and track what to watch next. Designed to practice full-stack development while solving a personal need for organizing movie recommendations.
   image: projects/watchlist.png
   url: https://yu-watch-list-01dafcf2d2bf.herokuapp.com/
   github: https://github.com/yu2111/rails-watch-list
@@ -33,7 +33,7 @@
 
 - name: Yulp
   role: Full-stack Developer
-  description: Yulp is a restaurant discovery and review platform that helps you find the best dining spots near you. Browse menus, read real reviews, and rate your dining experiences—all in one seamless app. Whether you're craving a quick bite or a fine dining experience, Yulp connects you to the perfect restaurant. 🍽️⭐
+  description: Developed Yulp, a restaurant discovery and review platform where users can browse menus, read and write reviews, and rate dining experiences. Built to explore full-stack development, focusing on seamless user interaction and efficient data handling.
   image: projects/yelp.png
   url: https://www.google.com
   github: https://github.com/yu2111/rails-yelp-mvp
