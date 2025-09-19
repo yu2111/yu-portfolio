@@ -1,3 +1,11 @@
+- name: 30-Day Hard (on progress)
+  role: Full-stack Developer
+  description: 30-day hard tracker, an app that helps you build discipline
+  image: projects/30-Day Hard.png
+  url: https://www.google.com
+  github: https://github.com/yu2111/30-Day-Hard_app
+  online: false
+
 - name: Sora Flight
   role: Full-stack Developer
   description: Sora Flight is an immersive AR game where players guess actual flight details—departure, arrival, and airline—using airport distances and compass clues. Watch planes take off and land around you, challenge yourself, and unlock achievements. Whether you're a travel enthusiast or trivia fan, experience the thrill of aviation at your fingertips!
