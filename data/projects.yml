@@ -1,7 +1,7 @@
 - name: 30-Day Hard (on progress)
   role: Full-stack Developer
   description: 30-day hard tracker, an app that helps you build discipline
-  image: projects/30-Day Hard.png
+  image: projects/30day.png
   url: https://www.google.com
   github: https://github.com/yu2111/30-Day-Hard_app
   online: false
