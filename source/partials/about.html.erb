@@ -1,10 +1,99 @@
-<section id="about">
-  <div class="row my-5">
-    <div class="col-12">
-      <div class="container">
-        <div class= "text-center" id="about">
-          <h2>About</h2>
-          <p>I'm a full-stack web developer with a background in education and a degree in International Business Management. My teaching experience sharpened my communication and problem-solving skills, while my business studies taught me strategic thinking and teamwork. After graduating from Le Wagon, I developed expertise in Ruby on Rails, JavaScript, HTML, CSS, and Bootstrap. I’m passionate about building clean, user-friendly applications and eager to contribute as a full-stack developer. 🚀</p>
+<section id="about" class="my-5">
+  <h2 class="text-center my-5">About</h2>
+  <div class="container">
+    <div class="row">
+      <div class="profile text-center mb-5 rounded-2 col-12 col-lg-4">
+        <div class="mb-3">
+          <div class="position-relative">
+            <%= image_tag 'yu500.png', alt: "profile photo", class: 'avatar mb-3' %>
+          </div>
+          <h4>Yu Sekiguchi</h4>
+          <p class="mb-0">Full-stack Developer</p>
+        </div>
+        <div>
+          <div class="card-category">
+            <div class="text-start">
+              <p><strong>Languages & Frameworks:</strong></p>
+              <span>Ruby, Ruby on Rails, JavaScript, HTML, CSS, SQL, Hotwire (Turbo/Stimulus), Bootstrap, REST APIs</span>
+            </div>
+          </div>
+          <div class="card-category">
+            <div class="text-start">
+              <p><strong>Tools:</strong></p>
+              <span>Git/GitHub, Postman, Heroku, Netlify, Notion, Figma, Canva</span>
+            </div>
+          </div>
+          <div class="card-category">
+            <div class="text-start">
+              <p><strong>Currently Learning:</strong></p>
+              <span>Node.js, Express.js, React, Tailwind CSS</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact mt-5">
+          <div class="d-flex justify-content-center flex-wrap">
+            <div class="button-social d-flex flex-column justify-content-center align-items-center">
+              <i class="fa-solid fa-envelope"></i>
+              <%= mail_to "yusekiguchi.dev@gmail.com", "", class: 'button-social-link' %>
+            </div>
+            <div class="button-social d-flex flex-column justify-content-center align-items-center">
+              <i class="fa-brands fa-github"></i>
+              <%= link_to "", "https://github.com/yu2111", target: '_blank', class: 'button-social-link' %>
+            </div>
+            <div class="button-social d-flex flex-column justify-content-center align-items-center">
+              <i class="fa-brands fa-linkedin"></i>
+              <%= link_to "", "https://www.linkedin.com/in/yu-sekiguchi/", target: '_blank', class: 'button-social-link' %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class= "about text-start">
+          <h4>About Me</h4>
+          <p>I'm a full-stack web developer with a background in education and a degree in International Business Management. My teaching experience sharpened my communication and problem-solving skills, while my business studies taught me strategic thinking and teamwork.
+          </p>
+          <p>
+            After graduating from Le Wagon, I developed expertise in Ruby on Rails, JavaScript, HTML, CSS, and Bootstrap. I’m passionate about building clean, user-friendly applications and eager to contribute as a full-stack developer. 🚀
+          </p>
+        </div>
+        <div>
+          <div class="info">
+            <div class="card-category">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="text-start">
+                <p>Based In</p>
+                <span><strong>Kanagawa, Japan</strong></span>
+              </div>
+            </div>
+            <div class="card-category" >
+              <i class="fa-solid fa-passport"></i>
+              <div class="text-start">
+                <p>Nationality</p>
+                <span><strong>Bachelor Degree</strong></span>
+              </div>
+            </div>
+            <div class="card-category" >
+              <i class="fa-solid fa-graduation-cap"></i>
+              <div class="text-start">
+                <p>Degree</p>
+                <span><strong>Bachelor Degree</strong></span>
+              </div>
+            </div>
+            <div class="card-category">
+              <i class="fa-solid fa-calendar-check"></i>
+              <div class="text-start">
+                <p>Email</p>
+                <span><strong>yusekiguchi.dev@gmail.com</strong></span>
+              </div>
+            </div>
+            <div class="card-category">
+              <i class="fa-solid fa-calendar-check"></i>
+              <div class="text-start">
+                <p>Availability</p>
+                <span><strong>Open to work</strong></span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

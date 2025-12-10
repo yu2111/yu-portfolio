@@ -1,6 +1,6 @@
 <section id="contact-me">
   <div class="mt-5 social">
-    <div id="contact">
+    <div class="contact">
       <div class="container py-5" id="form">
         <h2 class="mb-4 text-center">Let's get in touch!</h2>
         <form name="contact" method="POST" data-netlify="true" class="needs-validation" novalidate id="contact-form">
@@ -19,7 +19,7 @@
             <textarea name="message" id="message" class="form-control" rows="4" required></textarea>
             <div class="invalid-feedback">Please enter a message.</div>
           </div>
-          <button type="submit" class="btn btn-secondary w-100 mb-5">Send</button>
+          <button type="submit" class="btn btn-warning w-100 mb-5">Send</button>
         </form>
         <div id="form-success" class="alert alert-success mt-3 d-none">
           ✅ Thanks for your message! I’ll get back to you soon.
@@ -27,47 +27,6 @@
         <div id="form-error" class="alert alert-danger mt-3 d-none">
           ❌ Oops! Something went wrong. Please try again.
         </div>
-        <script>
-          const form = document.getElementById("contact-form");
-          const successMsg = document.getElementById("form-success");
-          const errorMsg = document.getElementById("form-error");
-
-          function showMessage(element) {
-            element.classList.remove("d-none");
-
-            setTimeout(() => {
-              element.classList.add("d-none");
-            }, 3000);
-          }
-
-          form.addEventListener("submit", function (e) {
-            e.preventDefault();
-
-            if (!form.checkValidity()) {
-              form.classList.add("was-validated");
-              return;
-            }
-
-            const formData = new FormData(form);
-
-            fetch("/", {
-              method: "POST",
-              body: formData,
-            })
-            .then(response => {
-              if (response.ok) {
-                form.reset();
-                form.classList.remove("was-validated");
-                showMessage(successMsg);
-              } else {
-                throw new Error("Network response was not ok");
-              }
-            })
-            .catch(() => {
-              showMessage(errorMsg);
-            });
-          });
-        </script>
         <div class="d-flex justify-content-center flex-wrap">
           <div class="button-social d-flex flex-column justify-content-center align-items-center">
             <i class="fa-solid fa-envelope"></i>
@@ -84,5 +43,47 @@
         </div>
       </div>
     </div>
+    <footer class="text-center pb-3">© <%= Time.now.year %> Yu Sekiguchi </footer>
   </div>
+  <script>
+    const form = document.getElementById("contact-form");
+    const successMsg = document.getElementById("form-success");
+    const errorMsg = document.getElementById("form-error");
+
+    function showMessage(element) {
+      element.classList.remove("d-none");
+
+      setTimeout(() => {
+        element.classList.add("d-none");
+      }, 3000);
+    }
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      if (!form.checkValidity()) {
+        form.classList.add("was-validated");
+        return;
+      }
+
+      const formData = new FormData(form);
+
+      fetch("/", {
+        method: "POST",
+        body: formData,
+      })
+      .then(response => {
+        if (response.ok) {
+          form.reset();
+          form.classList.remove("was-validated");
+          showMessage(successMsg);
+        } else {
+          throw new Error("Network response was not ok");
+        }
+      })
+      .catch(() => {
+        showMessage(errorMsg);
+      });
+    });
+  </script>
 </section>

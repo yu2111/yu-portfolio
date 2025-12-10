@@ -1,10 +1,9 @@
 <div class="justify-content-center banner">
   <div class="d-flex flex-column justify-content-center align-items-center h-100">
-    <%= image_tag 'yu500.png', alt: "profile photo", class: 'avatar mb-3' %>
-    <h1 class="title-main">Yu Sekiguchi</h1>
+    <h1 class="title-main">Hi, I'm <span class="typed"></span><span class="cursor">|</span></h1>
     <h2 class="fs-3 fw-bold">Full-stack Engineer</h2>
     <div class="col-12">
-      <div id="contact">
+      <div class="contact">
         <div class="d-flex justify-content-center flex-wrap">
           <div class="button-social d-flex flex-column justify-content-center align-items-center">
             <i class="fa-solid fa-envelope"></i>
@@ -22,9 +21,44 @@
       </div>
     </div>
     <div class="mt-3">
-      <a href="/Resume.pdf" target="_blank" class="btn btn-dark rounded-pill" download>
+      <a href="/Resume.pdf" target="_blank" class="btn btn-warning rounded-pill" download>
         <i class="fa-solid fa-file-arrow-down"></i> Download Resume
       </a>
     </div>
   </div>
 </div>
+<script>
+  let txt = "Yu Sekiguchi";
+  let i = 0;
+  let speed = 100;
+  let eraseSpeed = 50;
+  let delay = 1000;
+
+  function typeWriter() {
+   let typed = document.querySelector(".typed");
+
+   if (i < txt.length) {
+     typed.innerHTML += txt.charAt(i);
+     i++;
+     setTimeout(typeWriter, speed);
+   } else {
+     setTimeout(deleteWriter, delay);
+   }
+  }
+
+  function deleteWriter() {
+   let typed = document.querySelector(".typed");
+
+   if (i > 0) {
+     typed.innerHTML = txt.substring(0, i - 1);
+     i--;
+     setTimeout(deleteWriter, eraseSpeed);
+   } else {
+     setTimeout(typeWriter, speed);
+   }
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    typeWriter();
+  });
+</script>
