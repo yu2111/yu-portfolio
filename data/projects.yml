@@ -1,3 +1,11 @@
+- name: AI Discussion Questions Generator (in progress)
+  role: Full-stack Developer
+  description: Developing an AI Discussion Question Generator that produces customized prompts based on user-selected topics. Currently working on core features like topic filtering, difficulty settings, and instant question creation.
+  image: projects/AI-generator.png
+  url: https://www.google.com
+  github: https://github.com/yu2111/AI_Questions_Generator
+  online: false
+
 - name: 30-Day Hard (in progress)
   role: Full-stack Developer
   description: Currently developing 30-Day Hard Tracker, an app to help users build discipline through 30-day challenges. In progress - core features for progress tracking, streaks, and goal-setting to encourage consistency and personal growth.
