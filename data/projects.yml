@@ -1,4 +1,4 @@
-- name: AI Discussion Questions Generator (in progress)
+- name: AI Questions Generator (in progress)
   role: Full-stack Developer
   description: Developing an AI Discussion Question Generator that produces customized prompts based on user-selected topics. Currently working on core features like topic filtering, difficulty settings, and instant question creation.
   image: projects/AI-generator.png
@@ -15,7 +15,7 @@
   online: false
 
 - name: Sora Flight
-  role: Full-stack Developer
+  role: Full-stack Developer (with Yuki, Patrick and Axel)
   description: Developed core features for Sora Flight, an AR game where players guess real flight details using airport distances and compass clues. Designed and implemented the dashboard, scoring system, badges, and achievement tracking, significantly improving gameplay and user engagement.
   image: projects/sora.png
   url: https://www.sora-flight.games/
@@ -23,7 +23,7 @@
   online: true
 
 - name: SoraVé
-  role: Full-stack Developer
+  role: Full-stack Developer (with Yuki, Patrick and Axel)
   description: Contributed to SoraVé, a luxury rental platform for elite travel offering private jets, yachts, and high-end cars. Developed the dashboard enabling users to track bookings seamlessly as both customers and renters, improving transparency and user experience.
   image: projects/soravee.png
   url: https://www.google.com
