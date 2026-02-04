@@ -69,6 +69,18 @@
 
 }
 
+.languages {
+ margin: 16px 20px;
+  .fa-solid {
+      font-size: 28px;
+      color: rgb(235, 114, 0);
+    }
+}
+
+svg {
+  height: 32px;
+}
+
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .info {

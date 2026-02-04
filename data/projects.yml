@@ -6,18 +6,18 @@
   github: https://github.com/yu2111/AI_Questions_Generator
   online: false
 
-- name: 30-Day Hard (in progress)
+- name: Portfolio
   role: Full-stack Developer
-  description: Currently developing 30-Day Hard Tracker, an app to help users build discipline through 30-day challenges. In progress - core features for progress tracking, streaks, and goal-setting to encourage consistency and personal growth.
-  image: projects/30day.png
-  url: https://www.google.com
-  github: https://github.com/yu2111/30-Day-Hard_app
-  online: false
+  description: This portfolio website is built with Middleman and showcases my completed projects and ongoing work. It highlights what I am currently building while reflecting my continuous learning, technical growth, and focus on creating practical, user-focused applications.
+  image: projects/portfolio.gif
+  url: https://sekiguchiyu.dev/
+  github: https://github.com/yu2111/yu-portfolio
+  online: true
 
 - name: Sora Flight
   role: Full-stack Developer (with Yuki, Patrick and Axel)
   description: Developed core features for Sora Flight, an AR game where players guess real flight details using airport distances and compass clues. Designed and implemented the dashboard, scoring system, badges, and achievement tracking, significantly improving gameplay and user engagement.
-  image: projects/sora.png
+  image: projects/sora.gif
   url: https://www.sora-flight.games/
   github: https://github.com/andreyuki/sora_flight
   online: true
